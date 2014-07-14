@@ -37,5 +37,6 @@
 				All URLs are exploitable as GET or POST requests.
 			</div>
 		</div>
+	</div>
 </body>
 </html>
