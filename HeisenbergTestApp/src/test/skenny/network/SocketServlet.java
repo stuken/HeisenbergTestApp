@@ -30,7 +30,7 @@ public class SocketServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+		executeRequest(request, response);
 	}
 
 	/**
@@ -38,6 +38,11 @@ public class SocketServlet extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		executeRequest(request, response);
+	}
+
+	private void executeRequest(HttpServletRequest request,
+			HttpServletResponse response) throws IOException {
 		if(s != null) {
 			s.close();
 		}
