@@ -13,7 +13,7 @@
 </head>
 
 <body role="document">
-	<div class="content">
+	<div class="container">
 		<ul class="nav nav-tabs" role="tablist">
 			<li><a href="index.jsp">Home</a></li>
 			<li class="active"><a href="file.jsp">File</a></li>

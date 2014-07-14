@@ -3,7 +3,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css"
@@ -14,7 +13,7 @@
 </head>
 
 <body>
-	<div class="content">
+	<div class="container">
 		<ul class="nav nav-tabs" role="tablist">
 			<li class="active"><a href="index.jsp">Home</a></li>
 			<li><a href="file.jsp">File</a></li>
