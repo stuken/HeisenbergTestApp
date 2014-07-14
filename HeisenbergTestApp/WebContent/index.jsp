@@ -14,6 +14,10 @@
 
 <body>
 	<div class="container">
+		<div class="page-header">
+			<img src="img/waratek.png">
+		</div>
+
 		<ul class="nav nav-tabs" role="tablist">
 			<li class="active"><a href="index.jsp">Home</a></li>
 			<li><a href="file.jsp">File</a></li>
