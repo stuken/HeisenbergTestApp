@@ -11,8 +11,7 @@
 <script src="js/bootstrap.min.js"></script>
 <title>JAF Test App - Network</title>
 </head>
-</head>
-<body>
+
 <body role="document">
 	<div class="content">
 		<ul class="nav nav-tabs" role="tablist">
