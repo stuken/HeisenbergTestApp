@@ -32,7 +32,7 @@
 					C3P0 Connection Pool</a>
 			</div>
 			<div class="panel-body">
-				<form action=CreateConnection method="post">
+				<form action=CreateC3p0Connection method="post">
 					Connection String: <input type="text" name="connectionUrl"><br>
 					Username: <input type="text" name="username"><br>
 					Password: <input type="password" name="password"><br>
@@ -65,7 +65,7 @@
 					Java Connection</a>
 			</div>
 			<div class="panel-body">
-				<form action=CreateUnpooledConnection method="post">
+				<form action=CreateJavaConnection method="post">
 					Connection String: <input type="text" name="connectionUrl"><br>
 					Username: <input type="text" name="username"><br>
 					Password: <input type="password" name="password"><br>
