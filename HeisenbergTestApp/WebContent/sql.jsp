@@ -127,31 +127,31 @@
 					</script>
 					<li rel='tooltip' data-toggle="tooltip"
 						title="SELECT * FROM users WHERE id = ' ? '"
-						class="list-group-item"><a href="Get_int?id=">Get_int?id=</a></li>
+						class="list-group-item"><a href="Get_int?id=">Get_int?id=1</a></li>
 					<li rel='tooltip' data-toggle="tooltip"
 						title="SELECT * FROM users WHERE id = ?" class="list-group-item"><a
-						href="Get_int_no_quote?id=">Get_int_no_quote?id=</a></li>
+						href="Get_int_no_quote?id=">Get_int_no_quote?id=1</a></li>
 					<li rel='tooltip' data-toggle="tooltip"
 						title="SELECT * FROM users ORDER BY ' ? '" class="list-group-item"><a
-						href="Get_int_orderby?id=">Get_int_orderby?id=</a></li>
+						href="Get_int_orderby?id=">Get_int_orderby?id=name</a></li>
 					<li rel='tooltip' data-toggle="tooltip"
 						title="SELECT id FROM users GROUP BY ?" class="list-group-item"><a
-						href="Get_int_groupby?id=">Get_int_groupby?id=</a></li>
+						href="Get_int_groupby?id=">Get_int_groupby?id=name</a></li>
 					<li rel='tooltip' data-toggle="tooltip"
 						title="SELECT * FROM users WHERE id = ' ? '"
-						class="list-group-item"><a href="Get_int_partialunion?id=">Get_int_partialunion?id=</a></li>
+						class="list-group-item"><a href="Get_int_partialunion?id=">Get_int_partialunion?id=1</a></li>
 					<li rel='tooltip' data-toggle="tooltip"
 						title="SELECT * FROM users WHERE id = ' ? '"
-						class="list-group-item"><a href="Get_int_nooutput?id=">Get_int_nooutput?id=</a></li>
+						class="list-group-item"><a href="Get_int_nooutput?id=">Get_int_nooutput?id=1</a></li>
 					<li rel='tooltip' data-toggle="tooltip"
 						title="SELECT MIN(name) from users GROUP BY id HAVING id = ?"
-						class="list-group-item"><a href="Get_int_having?id=">Get_int_having?id=</a></li>
+						class="list-group-item"><a href="Get_int_having?id=">Get_int_having?id=1</a></li>
 					<li rel='tooltip' data-toggle="tooltip" title="?"
-						class="list-group-item"><a href="Get_int_inline?id=">Get_int_inline?id=</a></li>
+						class="list-group-item"><a href="Get_int_inline?id=">Get_int_inline?id=1</a></li>
 					<li rel='tooltip' data-toggle="tooltip" title="SELECT * FROM users WHERE name = ' ? '"
-						class="list-group-item"><a href="Get_string?name=">Get_string?name=</a></li>
+						class="list-group-item"><a href="Get_string?name=">Get_string?name=wu</a></li>
 					<li rel='tooltip' data-toggle="tooltip" title="SELECT * FROM users WHERE name = ?"
-						class="list-group-item"><a href="Get_string_no_quote?name=">Get_string_no_quote?name=</a></li>
+						class="list-group-item"><a href="Get_string_no_quote?name=">Get_string_no_quote?name=wu</a></li>
 				</ul>
 			</div>
 		</div>
