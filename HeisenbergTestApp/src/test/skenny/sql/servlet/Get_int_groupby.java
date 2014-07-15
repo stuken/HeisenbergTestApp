@@ -43,7 +43,7 @@ public class Get_int_groupby extends HttpServlet {
 	private void executeRequest(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		ServletContext application = this.getServletConfig().getServletContext();
 		String id = request.getParameter("id");
-		String sql = "SELECT id FROM users GROUP BY " + id;
+		String sql = "SELECT count(name), name FROM users GROUP BY " + id;
 
 		Boolean showErrors = true;
 		Boolean allResults = true;
