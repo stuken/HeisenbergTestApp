@@ -7,13 +7,18 @@
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css"
 	href="css/bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
 <script src="js/jquery-2.1.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <title>JAF Test App - Network</title>
 </head>
 
 <body role="document">
-	<div class="content">
+	<div class="container">
+		<div class="page-header">
+			<img src="img/waratek.png">
+		</div>
+
 		<ul class="nav nav-tabs" role="tablist">
 			<li><a href="index.jsp">Home</a></li>
 			<li><a href="file.jsp">File</a></li>
