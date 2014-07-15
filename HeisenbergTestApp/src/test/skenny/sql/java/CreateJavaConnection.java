@@ -37,7 +37,7 @@ public class CreateJavaConnection extends HttpServlet {
 	
 	public void init() {
 		ServletContext application = this.getServletConfig().getServletContext();
-		InputStream propStream = application.getResourceAsStream("conf/JafTestApp.properties");
+		InputStream propStream = application.getResourceAsStream("conf/HeisenbergTestApp.properties");
 		Properties prop = new Properties();
 		try {
 			prop.load(propStream);
