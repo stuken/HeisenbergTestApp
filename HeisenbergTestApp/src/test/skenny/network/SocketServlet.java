@@ -41,8 +41,7 @@ public class SocketServlet extends HttpServlet {
 		executeRequest(request, response);
 	}
 
-	private void executeRequest(HttpServletRequest request,
-			HttpServletResponse response) throws IOException {
+	private void executeRequest(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		if(s != null) {
 			s.close();
 		}

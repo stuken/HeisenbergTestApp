@@ -33,18 +33,23 @@ public class UrlServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+		executeRequest(request, response);
 	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		executeRequest(request, response);		
+	}
+
+	private void executeRequest(HttpServletRequest request,
+			HttpServletResponse response) throws IOException {
 		HttpSession session = request.getSession();		
 		String urlPath = request.getParameter("urlPath");
 
 		session.setAttribute("urlContents", readUrl(urlPath));
-		response.sendRedirect("network.jsp");		
+		response.sendRedirect("network.jsp");
 	}
 
 	private String readUrl(String pathname) throws IOException {
