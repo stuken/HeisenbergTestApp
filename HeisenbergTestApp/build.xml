@@ -141,9 +141,10 @@ BUILD USAGE
             <attribute name="Creation-Timestamp"            value="${timestamp}" />
         </manifest>
         <war
+        		needxmlfile='false'
                 destfile="${war.filepath}"
-                webxml="${webcontent.webinf.path}/web.xml"
                 manifest="${manifest.filepath}">
+        	
             <fileset dir="${webcontent.path}">
                 <include name="**/*.*" />
             </fileset>
