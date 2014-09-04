@@ -101,7 +101,7 @@ BUILD USAGE
 		<echo message="Javac source / target version:  [${javac.major.version}]" />
 		<echo message="User:                           [${user.name}]" />
 		<echo message="Timestamp:                      [${timestamp}]" />
-		<echo message="Geneated WAR file:              [${war.filepath}]" />
+		<echo message="Generated WAR file:              [${war.filepath}]" />
 	</target>
 
 	<!--
@@ -122,7 +122,7 @@ BUILD USAGE
 	<target name="-deploy">
 		<manifest file="${manifest.filepath}">
 			<attribute name="Implementation-Vendor" value="Waratek Limited" />
-			<attribute name="Implementation-Title" value="Heisenberge Test App" />
+			<attribute name="Implementation-Title" value="Heisenberg Test App" />
 			<attribute name="Javac-Source-Target-Version" value="${javac.major.version}" />
 			<attribute name="Built-By" value="${user.name}" />
 			<attribute name="Creation-Timestamp" value="${timestamp}" />
