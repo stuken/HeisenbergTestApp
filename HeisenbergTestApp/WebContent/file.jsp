@@ -29,7 +29,7 @@
 		<div class="panel panel-default">
 			<div class="panel-heading">File</div>
 			<div class="panel-body">
-				<form action="FileServlet" method="post">
+				<form id="fileForm" action="FileServlet" method="post">
 					<%
 						String textData = (String) session.getAttribute("fileContents");
 						if (textData == null) {
@@ -45,7 +45,7 @@
 			</div>
 			<div class="panel-footer">Text Data</div>
 			<div class="panel-body">
-				<pre><textarea style="width:100%;height:20em"><%=textData%></textarea></pre>
+				<pre><textarea form="fileForm" name="fileText" style="width:100%;height:20em"><%=textData%></textarea></pre>
 			</div>
 		</div>
 	</div>
