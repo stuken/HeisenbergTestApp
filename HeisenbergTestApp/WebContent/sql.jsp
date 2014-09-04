@@ -59,6 +59,7 @@
 				<pre><%=errorMessage%></pre>
 			</div>
 		</div>
+		<!--
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<a class="btn btn-primary" role="button" href="CreateJavaConnection">Initalize
@@ -116,6 +117,7 @@
 				<pre><%=contextData%></pre>
 			</div>
 		</div>
+		-->
 		<div class="panel panel-default">
 			<div class="panel-heading">Injectable URLS</div>
 			<div class="panel-body">
