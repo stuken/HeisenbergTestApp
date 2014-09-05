@@ -84,7 +84,7 @@ public class CreateC3p0Connection extends HttpServlet {
 
 			ServletContext application = this.getServletConfig().getServletContext();
 			application.setAttribute("connectionPool", ds);
-			session.setAttribute("connectionData", ds.toString());
+			application.setAttribute("connectionData", ds.toString());
 			response.sendRedirect("sql.jsp");
 		} catch (PropertyVetoException e) {
 			e.printStackTrace();

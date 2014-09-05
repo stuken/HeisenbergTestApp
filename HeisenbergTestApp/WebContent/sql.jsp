@@ -40,7 +40,7 @@
 				</form>
 			</div>
 			<%
-				String connectionData = (String) session
+				String connectionData = (String) application
 						.getAttribute("connectionData");
 				String errorMessage = (String) session.getAttribute("error");
 				if (connectionData == null) {
