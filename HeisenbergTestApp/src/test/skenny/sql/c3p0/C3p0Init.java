@@ -36,7 +36,6 @@ public class C3p0Init implements ServletContextListener{
 		}
 		application.setAttribute("connectionPool", ds);		
 		application.setAttribute("connectionData", ds.toString());
-		System.out.println(ds.toString());
 	}
 	
 	private void loadProperties(ServletContextEvent arg) {
