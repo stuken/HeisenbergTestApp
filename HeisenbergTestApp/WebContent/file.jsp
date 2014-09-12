@@ -16,7 +16,7 @@
 <body role="document">
 	<div class="container">
 		<div class="page-header">
-			<img src="img/waratek.png">
+			<img src="img/waratek.png" alt="Waratek">
 		</div>
 
 		<ul class="nav nav-tabs" role="tablist">
