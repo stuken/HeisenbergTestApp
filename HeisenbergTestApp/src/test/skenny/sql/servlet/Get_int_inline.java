@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import test.skenny.sql.util.QueryUtil;
+import test.skenny.sql.util.SelectUtil;
 
 /**
  * Servlet implementation class Get_int_inline
@@ -49,6 +49,6 @@ public class Get_int_inline extends HttpServlet {
 		Boolean allResults = true;
 		Boolean showOutput = true;
 
-		QueryUtil.executeQuery(sql, application, request, response, showErrors, allResults, showOutput);
+		SelectUtil.executeQuery(sql, application, request, response, showErrors, allResults, showOutput);
 	}
 }
