@@ -8,6 +8,7 @@ to test;
 CONNECT test/test;
 
 DROP TABLE users;
+DROP TABLE address;
 
 CREATE TABLE users (
     id number,
