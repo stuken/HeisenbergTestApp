@@ -154,6 +154,8 @@
 						class="list-group-item"><a href="Get_string?name=wu">Get_string?name=wu</a></li>
 					<li rel='tooltip' data-toggle="tooltip" title="SELECT * FROM users WHERE name = ?"
 						class="list-group-item"><a href="Get_string_no_quote?name='wu'">Get_string_no_quote?name='wu'</a></li>
+					<li rel='tooltip' data-toggle="tooltip" title="UPDATE users SET name = '?', surname = '?' WHERE id = ?"
+						class="list-group-item"><a href="Update_User?id=1&name=Joe&surname=Soap">Update_User?id=1&name=Joe&surname=Soap</a></li>
 				</ul>
 			</div>
 		</div>
