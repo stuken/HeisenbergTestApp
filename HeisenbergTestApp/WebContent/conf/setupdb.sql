@@ -24,7 +24,7 @@ CREATE TABLE address (
 	address_1 varchar(500),
 	address_2 varchar(500),
 	address_3 varchar(500)
-)
+);
 
 
 INSERT INTO users (id, name, surname) VALUES (1, 'luther', 'blisset');
