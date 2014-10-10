@@ -158,6 +158,8 @@
 						class="list-group-item"><a href="Update_User?id=1&name=Joe&surname=Soap">Update_User?id=1&name=Joe&surname=Soap</a></li>
 					<li rel='tooltip' data-toggle="tooltip" title="DELETE FROM users WHERE id = ? OR name = '?'"
 						class="list-group-item"><a href="Delete_User?id=1&name=Joe">Delete_User?id=1&name=Joe</a></li>
+					<li rel='tooltip' data-toggle="tooltip" title="INSERT INTO users VALUES (?, '?', '?', '?', '?', '?')"
+						class="list-group-item"><a href="Insert_User?id=101&name=Joe&surname=Soap&dob=01-Jan-1970&credit_card=1111-1111-1111-1111&cvv=999">Insert_User?id=101&name=Joe&surname=Soap&dob=01-Jan-1970&credit_card=1111-1111-1111-1111&cvv=999</a></li>
 				</ul>
 			</div>
 		</div>
