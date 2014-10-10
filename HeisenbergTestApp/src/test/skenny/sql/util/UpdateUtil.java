@@ -71,9 +71,9 @@ public class UpdateUtil {
 			
 		} catch(SQLException e) {
 			if(e.getMessage().contains("ORA")) {
-				response.sendError(500);
+				response.setStatus(500);
 			} else {
-				response.sendError(550);
+				response.setStatus(550);
 			}
 			out.println("<div class=\"alert alert-danger\" role=\"alert\">");
 			out.println("<strong>SQLException:</strong> " + e.getMessage() + "<BR>");
