@@ -169,6 +169,9 @@
 					<li rel='tooltip' data-toggle="tooltip"
 						title="SELECT * FROM users, address WHERE users.id = ? AND users.id = address.id"
 						class="list-group-item"><a href="Get_Implicit_Join?id=1">Get_Implicit_Join?id=1</a></li>
+					<li rel='tooltip' data-toggle="tooltip"
+						title="SELECT name, surname, TO_CHAR(dob) FROM users WHERE id = ? UNION SELECT address_1, address_2, address_3 FROM address WHERE id = ?"
+						class="list-group-item"><a href="Get_Union?id=1">Get_Union?id=1</a></li>
 				</ul>
 			</div>
 		</div>
