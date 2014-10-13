@@ -172,6 +172,9 @@
 					<li rel='tooltip' data-toggle="tooltip"
 						title="SELECT name, surname, TO_CHAR(dob) FROM users WHERE id = ? UNION SELECT address_1, address_2, address_3 FROM address WHERE id = ?"
 						class="list-group-item"><a href="Get_Union?id=1">Get_Union?id=1</a></li>
+					<li rel='tooltip' data-toggle="tooltip"
+						title="SELECT * FROM users FULL OUTER JOIN address ON users.id = address.id AND users.id = ?"
+						class="list-group-item"><a href="Get_Full_Outer_Join?id=1">Get_Full_Outer_Join?id=1</a></li>
 				</ul>
 			</div>
 		</div>
