@@ -131,7 +131,7 @@ public class SelectUtil {
 			if(content != null) {
 				out.println("<TD>" + content.toString() + "</TD>");
 			} else {
-				out.println("<TD>null</TD>");
+				out.println("<TD></TD>");
 			}
 		}
 		out.println("</TR>");
