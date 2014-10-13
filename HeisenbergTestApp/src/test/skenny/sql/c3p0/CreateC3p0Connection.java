@@ -27,6 +27,7 @@ public class CreateC3p0Connection extends HttpServlet {
 	private String url;
 	private String username;
 	private String password;
+	private int maxPoolSize;
 
 	/**
 	 * @see HttpServlet#HttpServlet()
@@ -53,6 +54,12 @@ public class CreateC3p0Connection extends HttpServlet {
 		url = prop.getProperty("c3p0.url");
 		username = prop.getProperty("c3p0.username");
 		password = prop.getProperty("c3p0.password");
+		try {
+			maxPoolSize = Integer.parseInt(prop.getProperty("c3p0.maxPoolSize"));
+		} catch (NumberFormatException e) {
+			maxPoolSize = 25;
+		}
+		
 	}
 
 	/**
@@ -102,7 +109,7 @@ public class CreateC3p0Connection extends HttpServlet {
 		ds.setPassword(password);
 		ds.setMinPoolSize(5);
 		ds.setAcquireIncrement(5);
-		ds.setMaxPoolSize(25);
+		ds.setMaxPoolSize(maxPoolSize);
 
 		return ds;
 	}

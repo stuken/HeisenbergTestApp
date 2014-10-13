@@ -58,6 +58,12 @@ public class C3p0Init implements ServletContextListener{
 		String url = props.getProperty("c3p0.url");
 		String username = props.getProperty("c3p0.username");
 		String password = props.getProperty("c3p0.password");
+		int maxPoolSize = 0;
+		try {
+			maxPoolSize = Integer.parseInt(props.getProperty("c3p0.maxPoolSize"));
+		} catch (NumberFormatException e) {
+			maxPoolSize = 25;
+		}
 		
 		ds.setDriverClass(jdbcDriver);
 		ds.setJdbcUrl(url);
@@ -65,7 +71,7 @@ public class C3p0Init implements ServletContextListener{
 		ds.setPassword(password);
 		ds.setMinPoolSize(5);
 		ds.setAcquireIncrement(5);
-		ds.setMaxPoolSize(25);
+		ds.setMaxPoolSize(maxPoolSize);
 		return ds;
 	}	
 }
