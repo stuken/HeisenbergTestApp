@@ -145,7 +145,7 @@ INSERT INTO address (id, address_1, address_2, address_3) VALUES (14, 'P.O. Box 
 INSERT INTO address (id, address_1, address_2, address_3) VALUES (15, 'Ap #567-9659 Blandit Av.', 'Langholm', 'Palestine,  State of');
 INSERT INTO address (id, address_1, address_2, address_3) VALUES (16, '9137 Purus,  Road', 'Ede', 'Afghanistan');
 INSERT INTO address (id, address_1, address_2, address_3) VALUES (17, '197-9767 Et Street', 'Grave', 'Mayotte');
-INSERT INTO address (id, address_1, address_2, address_3) VALUES (18, '3585 Imperdiet Ave', 'Köflach', 'Sint Maarten');
+INSERT INTO address (id, address_1, address_2, address_3) VALUES (18, '3585 Imperdiet Ave', 'Koflach', 'Sint Maarten');
 INSERT INTO address (id, address_1, address_2, address_3) VALUES (19, '767-1258 Suspendisse Street', 'Borsbeek', 'Vanuatu');
 INSERT INTO address (id, address_1, address_2, address_3) VALUES (20, '543-2136 Risus. Ave', 'Ramagundam', 'Saint Helena,  Ascension and Tristan da Cunha');
 INSERT INTO address (id, address_1, address_2, address_3) VALUES (21, 'P.O. Box 865,  6049 Sed St.', 'Oostmalle', 'Seychelles');
@@ -154,7 +154,7 @@ INSERT INTO address (id, address_1, address_2, address_3) VALUES (23, '486-6116 
 INSERT INTO address (id, address_1, address_2, address_3) VALUES (24, 'P.O. Box 107,  2658 Mattis Ave', 'Jabalpur', 'Aruba');
 INSERT INTO address (id, address_1, address_2, address_3) VALUES (25, '486-8514 Ut St.', 'Bergerac', 'Marshall Islands');
 INSERT INTO address (id, address_1, address_2, address_3) VALUES (26, '3490 Aliquet Rd.', 'Imst', 'Dominican Republic');
-INSERT INTO address (id, address_1, address_2, address_3) VALUES (27, '263-1658 Vel,  Avenue', 'Chalon-sur-Saône', 'Sudan');
+INSERT INTO address (id, address_1, address_2, address_3) VALUES (27, '263-1658 Vel,  Avenue', 'Chalon-sur-Saone', 'Sudan');
 INSERT INTO address (id, address_1, address_2, address_3) VALUES (28, '929-3045 Arcu St.', 'Bhilwara', 'Dominican Republic');
 INSERT INTO address (id, address_1, address_2, address_3) VALUES (29, 'Ap #478-2303 Sodales Avenue', 'Werbomont', 'Trinidad and Tobago');
 INSERT INTO address (id, address_1, address_2, address_3) VALUES (30, '952-448 Ac Av.', 'Villers-Perwin', 'Uruguay');
