@@ -13,7 +13,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import test.skenny.sql.servlet.util.ParameterNullFix;
-import test.skenny.sql.util.SelectUtil;
 import test.skenny.sql.util.UpdateUtil;
 
 /**
