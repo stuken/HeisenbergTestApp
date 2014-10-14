@@ -39,7 +39,7 @@ public class CreateC3p0Connection extends HttpServlet {
 	
 	public void init() {
 		ServletContext application = this.getServletConfig().getServletContext();
-		InputStream propStream = application.getResourceAsStream("conf/HeisenbergTestApp.properties");
+		InputStream propStream = application.getResourceAsStream("conf/Spiracle.properties");
 		Properties prop = new Properties();
 		try {
 			prop.load(propStream);

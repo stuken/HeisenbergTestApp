@@ -40,7 +40,7 @@ public class C3p0Init implements ServletContextListener{
 	
 	private void loadProperties(ServletContextEvent arg) {
 		ServletContext application = arg.getServletContext();
-		InputStream propStream = application.getResourceAsStream("conf/HeisenbergTestApp.properties");		
+		InputStream propStream = application.getResourceAsStream("conf/Spiracle.properties");		
 		try {
 			props.load(propStream);
 		} catch (FileNotFoundException e) {
