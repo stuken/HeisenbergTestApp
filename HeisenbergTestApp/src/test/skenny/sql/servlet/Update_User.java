@@ -1,6 +1,8 @@
 package test.skenny.sql.servlet;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 import javax.servlet.ServletContext;
@@ -10,6 +12,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import test.skenny.sql.servlet.util.ParameterNullFix;
 import test.skenny.sql.util.SelectUtil;
 import test.skenny.sql.util.UpdateUtil;
 
@@ -44,9 +47,18 @@ public class Update_User extends HttpServlet {
 	
 	private void executeRequest(HttpServletRequest request, HttpServletResponse response) throws IOException {			
 		ServletContext application = this.getServletConfig().getServletContext();
-		String id = request.getParameter("id");
-		String name = request.getParameter("name");
-		String surname = request.getParameter("surname");
+		List<String> queryStringList = new ArrayList<String>();		
+		
+		queryStringList.add("id");
+		queryStringList.add("name");
+		queryStringList.add("surname");
+		
+		Map<String, String> nullSanitizedMap = ParameterNullFix.sanitizeNull(queryStringList, request);
+		
+		
+		String id = nullSanitizedMap.get("id");
+		String name = nullSanitizedMap.get("name");
+		String surname = nullSanitizedMap.get("surname");
 
 		String sql = "UPDATE users SET name = '" + name + "', surname = '" + surname + "' WHERE id = " + id;
 

@@ -1,6 +1,9 @@
 package test.skenny.sql.servlet;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
@@ -9,6 +12,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import test.skenny.sql.servlet.util.ParameterNullFix;
 import test.skenny.sql.util.UpdateUtil;
 
 /**
@@ -42,12 +46,23 @@ public class Insert_User extends HttpServlet {
 
 	private void executeRequest(HttpServletRequest request, HttpServletResponse response) throws IOException {			
 		ServletContext application = this.getServletConfig().getServletContext();
-		String id = request.getParameter("id");
-		String name = request.getParameter("name");
-		String surname = request.getParameter("surname");
-		String dob = request.getParameter("dob");
-		String credit_card = request.getParameter("credit_card");
-		String cvv = request.getParameter("cvv");
+		List<String> queryStringList = new ArrayList<String>();		
+		
+		queryStringList.add("id");
+		queryStringList.add("name");
+		queryStringList.add("surname");
+		queryStringList.add("dob");
+		queryStringList.add("credit_card");
+		queryStringList.add("cvv");
+		
+		Map<String, String> nullSanitizedMap = ParameterNullFix.sanitizeNull(queryStringList, request);
+		
+		String id = nullSanitizedMap.get("id");
+		String name = nullSanitizedMap.get("name");
+		String surname = nullSanitizedMap.get("surname");
+		String dob = nullSanitizedMap.get("dob");
+		String credit_card = nullSanitizedMap.get("credit_card");
+		String cvv = nullSanitizedMap.get("cvv");
 
 		String sql = "INSERT INTO users VALUES (" + id + ", '" + name + "', '" + surname + "', '" + dob + "', '" + credit_card + "', '" + cvv + "')";
 
