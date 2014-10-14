@@ -12,7 +12,7 @@
 
 	<property name="war.name" value="HeisenbergTestApp.war" />
 
-	<property name="javac.major.version" value="1.7" />
+	<property name="javac.major.version" value="1.6" />
 
 	<!--
         Properties - paths related.
