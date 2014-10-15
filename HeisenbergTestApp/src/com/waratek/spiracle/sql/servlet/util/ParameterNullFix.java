@@ -7,17 +7,17 @@ import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 
 public class ParameterNullFix {
-	
-	public static Map<String, String> sanitizeNull(List<String> inputList, HttpServletRequest request) {
-		Map<String, String> outputMap= new HashMap<String, String>();
-		for(String item : inputList) {
-			String val = request.getParameter(item);
-			if(val == null) {
-				outputMap.put(item, "");
-			} else {
-				outputMap.put(item, val);
-			}
-		}
-		return outputMap;		
-	}
+    
+    public static Map<String, String> sanitizeNull(List<String> inputList, HttpServletRequest request) {
+        Map<String, String> outputMap= new HashMap<String, String>();
+        for(String item : inputList) {
+            String val = request.getParameter(item);
+            if(val == null) {
+                outputMap.put(item, "");
+            } else {
+                outputMap.put(item, val);
+            }
+        }
+        return outputMap;       
+    }
 }

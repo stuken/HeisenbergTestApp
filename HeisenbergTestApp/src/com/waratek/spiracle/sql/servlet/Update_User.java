@@ -20,7 +20,7 @@ import com.waratek.spiracle.sql.util.UpdateUtil;
  */
 @WebServlet("/Update_User")
 public class Update_User extends HttpServlet {
-	private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
@@ -30,38 +30,38 @@ public class Update_User extends HttpServlet {
         // TODO Auto-generated constructor stub
     }
 
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		executeRequest(request, response);
-	}
+    /**
+     * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+     */
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        executeRequest(request, response);
+    }
 
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		executeRequest(request, response);
-	}
-	
-	private void executeRequest(HttpServletRequest request, HttpServletResponse response) throws IOException {			
-		ServletContext application = this.getServletConfig().getServletContext();
-		List<String> queryStringList = new ArrayList<String>();		
-		
-		queryStringList.add("id");
-		queryStringList.add("name");
-		queryStringList.add("surname");
-		
-		Map<String, String> nullSanitizedMap = ParameterNullFix.sanitizeNull(queryStringList, request);
-		
-		
-		String id = nullSanitizedMap.get("id");
-		String name = nullSanitizedMap.get("name");
-		String surname = nullSanitizedMap.get("surname");
+    /**
+     * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+     */
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        executeRequest(request, response);
+    }
+    
+    private void executeRequest(HttpServletRequest request, HttpServletResponse response) throws IOException {          
+        ServletContext application = this.getServletConfig().getServletContext();
+        List<String> queryStringList = new ArrayList<String>();     
+        
+        queryStringList.add("id");
+        queryStringList.add("name");
+        queryStringList.add("surname");
+        
+        Map<String, String> nullSanitizedMap = ParameterNullFix.sanitizeNull(queryStringList, request);
+        
+        
+        String id = nullSanitizedMap.get("id");
+        String name = nullSanitizedMap.get("name");
+        String surname = nullSanitizedMap.get("surname");
 
-		String sql = "UPDATE users SET name = '" + name + "', surname = '" + surname + "' WHERE id = " + id;
+        String sql = "UPDATE users SET name = '" + name + "', surname = '" + surname + "' WHERE id = " + id;
 
-		UpdateUtil.executeUpdate(sql, application, request, response);
-	}
+        UpdateUtil.executeUpdate(sql, application, request, response);
+    }
 
 }

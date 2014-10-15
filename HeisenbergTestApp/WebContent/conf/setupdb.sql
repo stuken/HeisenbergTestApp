@@ -20,10 +20,10 @@ CREATE TABLE users (
 );
 
 CREATE TABLE address (
-	id number,
-	address_1 varchar(500),
-	address_2 varchar(500),
-	address_3 varchar(500)
+    id number,
+    address_1 varchar(500),
+    address_2 varchar(500),
+    address_3 varchar(500)
 );
 
 

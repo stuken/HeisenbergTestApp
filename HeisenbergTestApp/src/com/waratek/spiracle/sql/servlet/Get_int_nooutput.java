@@ -20,46 +20,46 @@ import com.waratek.spiracle.sql.util.SelectUtil;
  */
 @WebServlet("/Get_int_nooutput")
 public class Get_int_nooutput extends HttpServlet {
-	private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
-	/**
-	 * @see HttpServlet#HttpServlet()
-	 */
-	public Get_int_nooutput() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public Get_int_nooutput() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
 
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		executeRequest(request, response);
-	}
+    /**
+     * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+     */
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        executeRequest(request, response);
+    }
 
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		executeRequest(request, response);
-	}
+    /**
+     * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+     */
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        executeRequest(request, response);
+    }
 
-	private void executeRequest(HttpServletRequest request, HttpServletResponse response) throws IOException {			
-		ServletContext application = this.getServletConfig().getServletContext();
-		List<String> queryStringList = new ArrayList<String>();		
-		queryStringList.add("id");
-		
-		Map<String, String> nullSanitizedMap = ParameterNullFix.sanitizeNull(queryStringList, request);
+    private void executeRequest(HttpServletRequest request, HttpServletResponse response) throws IOException {          
+        ServletContext application = this.getServletConfig().getServletContext();
+        List<String> queryStringList = new ArrayList<String>();     
+        queryStringList.add("id");
+        
+        Map<String, String> nullSanitizedMap = ParameterNullFix.sanitizeNull(queryStringList, request);
 
-		String id = nullSanitizedMap.get("id");
-		
-		String sql = "SELECT * FROM users WHERE id = '" + id + "'";
-		
-		Boolean showErrors = false;
-		Boolean allResults = true;
-		Boolean showOutput = false;
-		
-		SelectUtil.executeQuery(sql, application, request, response, showErrors, allResults, showOutput);
-	}
+        String id = nullSanitizedMap.get("id");
+        
+        String sql = "SELECT * FROM users WHERE id = '" + id + "'";
+        
+        Boolean showErrors = false;
+        Boolean allResults = true;
+        Boolean showOutput = false;
+        
+        SelectUtil.executeQuery(sql, application, request, response, showErrors, allResults, showOutput);
+    }
 }
 

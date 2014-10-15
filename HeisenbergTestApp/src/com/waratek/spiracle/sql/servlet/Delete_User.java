@@ -20,7 +20,7 @@ import com.waratek.spiracle.sql.util.UpdateUtil;
  */
 @WebServlet("/Delete_User")
 public class Delete_User extends HttpServlet {
-	private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
@@ -30,34 +30,34 @@ public class Delete_User extends HttpServlet {
         // TODO Auto-generated constructor stub
     }
 
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		executeRequest(request, response);
-	}
+    /**
+     * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+     */
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        executeRequest(request, response);
+    }
 
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		executeRequest(request, response);
-	}
+    /**
+     * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+     */
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        executeRequest(request, response);
+    }
 
-	private void executeRequest(HttpServletRequest request, HttpServletResponse response) throws IOException {			
-		ServletContext application = this.getServletConfig().getServletContext();
-		List<String> queryStringList = new ArrayList<String>();		
-		queryStringList.add("id");
-		queryStringList.add("name");
-		
-		Map<String, String> nullSanitizedMap = ParameterNullFix.sanitizeNull(queryStringList, request);
+    private void executeRequest(HttpServletRequest request, HttpServletResponse response) throws IOException {          
+        ServletContext application = this.getServletConfig().getServletContext();
+        List<String> queryStringList = new ArrayList<String>();     
+        queryStringList.add("id");
+        queryStringList.add("name");
+        
+        Map<String, String> nullSanitizedMap = ParameterNullFix.sanitizeNull(queryStringList, request);
 
-		String id = nullSanitizedMap.get("id");		
-		String name = nullSanitizedMap.get("name");
+        String id = nullSanitizedMap.get("id");     
+        String name = nullSanitizedMap.get("name");
 
-		String sql = "DELETE FROM users WHERE id = " + id  + " OR name = '" + name + "'";
+        String sql = "DELETE FROM users WHERE id = " + id  + " OR name = '" + name + "'";
 
-		UpdateUtil.executeUpdate(sql, application, request, response);
-	}
+        UpdateUtil.executeUpdate(sql, application, request, response);
+    }
 
 }
