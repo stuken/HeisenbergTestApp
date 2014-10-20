@@ -10,7 +10,7 @@
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <script src="js/jquery-2.1.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<title>JAF Test App - File</title>
+<title>Spiracle - File</title>
 </head>
 
 <body role="document">
