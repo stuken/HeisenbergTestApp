@@ -150,7 +150,7 @@
                         class="list-group-item"><a href="Get_int_having?id=1">Get_int_having?id=1</a></li>
                     <li rel='tooltip' data-toggle="tooltip"
                         title="?"
-                        class="list-group-item"><a href="Get_int_inline?id=SELECT * FROM users">Get_int_inline?id=SELECT * FROM users</a></li>
+                        class="list-group-item"><a href="Get_int_inline?id=SELECT%20*%20FROM%20users">Get_int_inline?id=SELECT * FROM users</a></li>
                     <li rel='tooltip' data-toggle="tooltip"
                         title="SELECT * FROM users WHERE name = ' ? '"
                         class="list-group-item"><a href="Get_string?name=wu">Get_string?name=wu</a></li>
@@ -159,13 +159,13 @@
                         class="list-group-item"><a href="Get_string_no_quote?name='wu'">Get_string_no_quote?name='wu'</a></li>
                     <li rel='tooltip' data-toggle="tooltip"
                         title="UPDATE users SET name = '?', surname = '?' WHERE id = ?"
-                        class="list-group-item"><a href="Update_User?id=1&name=Joe&surname=Soap">Update_User?id=1&name=Joe&surname=Soap</a></li>
+                        class="list-group-item"><a href="Update_User?id=1&amp;name=Joe&amp;surname=Soap">Update_User?id=1&amp;name=Joe&amp;surname=Soap</a></li>
                     <li rel='tooltip' data-toggle="tooltip"
                         title="DELETE FROM users WHERE id = ? OR name = '?'"
-                        class="list-group-item"><a href="Delete_User?id=1&name=Joe">Delete_User?id=1&name=Joe</a></li>
+                        class="list-group-item"><a href="Delete_User?id=1&amp;name=Joe">Delete_User?id=1&amp;name=Joe</a></li>
                     <li rel='tooltip' data-toggle="tooltip"
                         title="INSERT INTO users VALUES (?, '?', '?', '?', '?', '?')"
-                        class="list-group-item"><a href="Insert_User?id=101&name=Joe&surname=Soap&dob=01-Jan-1970&credit_card=1111-1111-1111-1111&cvv=999">Insert_User?id=101&name=Joe&surname=Soap&dob=01-Jan-1970&credit_card=1111-1111-1111-1111&cvv=999</a></li>
+                        class="list-group-item"><a href="Insert_User?id=101&amp;name=Joe&amp;surname=Soap&amp;dob=01-Jan-1970&amp;credit_card=1111-1111-1111-1111&amp;cvv=999">Insert_User?id=101&amp;name=Joe&amp;surname=Soap&amp;dob=01-Jan-1970&amp;credit_card=1111-1111-1111-1111&amp;cvv=999</a></li>
                     <li rel='tooltip' data-toggle="tooltip"
                         title="SELECT * FROM users, address WHERE users.id = ? AND users.id = address.id"
                         class="list-group-item"><a href="Get_Implicit_Join?id=1">Get_Implicit_Join?id=1</a></li>
