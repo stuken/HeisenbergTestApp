@@ -36,11 +36,8 @@
           </div>
         </div>
 
-
-        <div class="panel panel-default">
-            <div class="panel-heading">Readme</div>
-            <div class="panel-body">
-                <h4>Readme for SQL Injection rule page.</h4>                
+        <div class="container">
+            <h1>Overview</h1>
                 By default datasources are configures by reading a properties file contained within the war file: conf/JafTestApp.properties<br>
                 Datasource initialization is controlled by the button on each datasource type on the SQL injection page.<br>
                 JDBC connection string, username and password are also overridable using the input fields on the SQL Injection page.<br>
@@ -50,8 +47,6 @@
                 These are provided as a demonstration of interception from differing data source types and are not pooled. It is not recommended <br>
                 that these be used with a high load penetration tool such as SQLMap as these connections are likely to fail under high request volumes.<br>
                 All URLs are exploitable as GET or POST requests.
-            </div>
-        </div>
     </div>
 </body>
 </html>
