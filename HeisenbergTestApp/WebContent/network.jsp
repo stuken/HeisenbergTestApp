@@ -98,7 +98,7 @@
                 </form>
             </div>
             <div class="panel-footer">
-                <pre><textarea style="width: 100%; height: 20em"><%=urlData%></textarea></pre>
+                <pre><textarea readonly id="network_output"><%=urlData%></textarea></pre>
             </div>
         </div>
     </div>
