@@ -14,9 +14,6 @@
 </head>
 
 <body role="document">
-    <div class="container">
-        <div class="page-header">
-            <img src="img/waratek.png" alt="Waratek">
         </div>
 
 
