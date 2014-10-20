@@ -36,6 +36,9 @@
           </div>
         </div>
 
+        <div class="container">
+            <h1>SQL Injection</h1>
+
         <div class="panel panel-default">
             <div class="panel-heading">
                 <a class="btn btn-primary" role="button" href="CreateC3p0Connection">Initalize
