@@ -19,12 +19,6 @@
             <img src="img/waratek.png" alt="Waratek">
         </div>
 
-        <ul class="nav nav-tabs" role="tablist">
-            <li class="active"><a href="index.jsp">Home</a></li>
-            <li><a href="file.jsp">File</a></li>
-            <li><a href="network.jsp">Network</a></li>
-            <li><a href="sql.jsp">SQL Injection</a></li>
-        </ul>
 
         <div class="panel panel-default">
             <div class="panel-heading">Readme</div>
