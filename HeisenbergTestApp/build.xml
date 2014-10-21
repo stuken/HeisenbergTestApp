@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project name="heisenberg_test_app" default="build" basedir=".">
+<project name="spiracle" default="build" basedir=".">
 
     <!--
         Properties - non path related.
@@ -10,7 +10,7 @@
         <format property="timestamp" pattern="yyyy-MM-dd_HH-MM-ss" />
     </tstamp>
 
-    <property name="war.name" value="HeisenbergTestApp.war" />
+    <property name="war.name" value="Spiracle.war" />
 
     <property name="javac.major.version" value="1.6" />
 
@@ -59,7 +59,7 @@
 BUILD USAGE
 ------------------------------------------------------------------------------------------
 
-    To build the Heisenberg Test Application WAR file, run:
+    To build the Spiracle Test Application WAR file, run:
         ant
     or
         ant build
@@ -122,7 +122,7 @@ BUILD USAGE
     <target name="-deploy">
         <manifest file="${manifest.filepath}">
             <attribute name="Implementation-Vendor" value="Waratek Limited" />
-            <attribute name="Implementation-Title" value="Heisenberg Test App" />
+            <attribute name="Implementation-Title" value="Spiracle" />
             <attribute name="Javac-Source-Target-Version" value="${javac.major.version}" />
             <attribute name="Built-By" value="${user.name}" />
             <attribute name="Creation-Timestamp" value="${timestamp}" />
