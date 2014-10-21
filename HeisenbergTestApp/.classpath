@@ -19,5 +19,6 @@
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.USER_LIBRARY/Spring"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JSON Simple"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.USER_LIBRARY/Google GSON"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Apache Commons Lang3"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
