@@ -10,7 +10,7 @@
         <format property="timestamp" pattern="yyyy-MM-dd_HH-MM-ss" />
     </tstamp>
 
-    <property name="war.name" value="Spiracle.war" />
+    <property name="war.name" value="spiracle.war" />
 
     <property name="javac.major.version" value="1.6" />
 
